@@ -10,12 +10,13 @@ source:
   sha256: 87284a117944723eebbf077f857a0a114d818f8b5b54d289d59e73581194f5ef
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - make
   host:
     - gmp
